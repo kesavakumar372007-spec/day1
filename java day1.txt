@@ -38,3 +38,71 @@ public class Main {
         System.out.println("Placement Status: " + placementStatus);
     }
 }
+6.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int largest = (a>=b && a>=c) ? a : (b >= a && b>=c) ? b : c;
+        System.out.println(largest);
+    }
+}
+7.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String result = (n > 0) ? "Positive" : (n < 0) ? "Negative" : "Zero";
+        System.out.println(result);
+        sc.close();
+    }
+}
+8.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+        if (amount % 10 == 0) {
+            System.out.println("Valid Amount");
+        } else {
+            System.out.println("Invalid Amount");
+        }
+        sc.close();
+    }
+}
+9.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n >= 50 && n <= 100) {
+            System.out.println("Inside Range");
+        } else {
+            System.out.println("Outside Range");
+        }
+        sc.close();
+    }
+}
+8.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter salary: ");
+        double salary = sc.nextDouble();
+        System.out.print("Enter years of experience: ");
+        int experience = sc.nextInt();
+        int bonus = 0;
+        if (experience >= 5 && salary < 50000) {
+            bonus = 5000;
+        }
+        System.out.println("Bonus = ₹" + bonus);
+        sc.close();
+    }
+}
